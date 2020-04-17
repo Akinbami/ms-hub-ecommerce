@@ -1,0 +1,27 @@
+$DM-font-38: 38px;
+$DM-font-36: 36px;
+$DM-font-30: 30px;
+$DM-font-26: 26px;
+$DM-font-24: 24px;
+$DM-font-20: 20px;
+$DM-font-20: 18px;
+$color_white: #fff;
+$color_black: #000;
+$primary_color: #4FC4CF;
+$color_grey: #707070;
+
+@mixin fontDefault ($font,$size){
+    @if ($font == DMB) {
+        font-family: 'Hind-Regular';
+    }
+    @else if ($font == DMS) {
+        font-family: 'Hind-Regular';
+    }
+    @else if ($font == DMR) {
+        font-family: 'Hind-Bold';
+    }
+    @else if ($font == DMM) {
+        font-family: 'Hind-SemiBold';
+    }
+    font-size: $size;
+}
