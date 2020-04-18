@@ -24,6 +24,84 @@ section{
     background-position: 0px 0px; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        opacity: 0.6;
+        background-color:#181818;
+    }
+
+    .hero__container{
+
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+
+        .text{
+            display: flex;
+            height: 50%;
+            align-items: flex-end;
+            position: relative;
+            z-index: 1;
+            h2{
+                color: white;
+                @include fontDefault(DMS,32px);
+                color: white;
+
+                text-align: center;
+                line-height: 43px;
+
+
+            }
+        }
+
+        .browse{
+            display: flex;
+            height: 40%;
+            align-items: flex-end;
+            position: relative;
+            z-index: 1;
+
+            .categories{
+                color: white;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                h4{
+                    @include fontDefault(DMB,16px);
+                }
+
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-top: 5px;
+
+                    li{
+                        width: 10%;
+                        cursor: pointer;
+                        @include fontDefault(DMR,12px);
+                    }
+                }
+            }
+
+        }
+
+    }
+
 }
 
 .flash{
@@ -32,18 +110,50 @@ section{
         @include container();
          display: flex;
          flex-wrap: wrap;
-         height: 300px;
+         height: 200px;
          justify-content: space-between;
          flex-direction: row;
 
+         .flash__item{
+            display: flex;
+            flex-direction: column;
+
+            .title{
+                height: 35%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-end;
+                padding-left: 20px;
+                @include fontDefault(DMB,22px);
+                color: white;
+            }
+
+            .image{
+                height: 65%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: flex-end;
+                .flash_image{
+                    height: 100%;
+                    position: relative;
+                    // margin-bottom: -10px;
+                }
+            }
+         }
         .flash__left{
             flex-basis: 49%;
             background-color: #FBB374;
+
+            @extend .flash__item;
         }
 
         .flash__right{
             width: 49%;
             background-color: #994FF3;
+
+            @extend .flash__item;
         }
 
 
@@ -52,6 +162,7 @@ section{
 .featured__small{
     // margin:10px 0px;
     @include container();
+    margin:100px auto 50px auto;
 
     .title{
         @include fontDefault(DMS,22px);
@@ -109,7 +220,7 @@ section{
         .box{
             width: 49.5%;
             border: solid 1px #EEEEEE;
-            height: 400px;
+            height: 100%;
             padding: 10px;
             margin:5px 0px;
 
@@ -119,7 +230,7 @@ section{
 
             .image{
                 width: 100%;
-                height: 60%;
+                height: 70%;
             }
 
             .image__container{

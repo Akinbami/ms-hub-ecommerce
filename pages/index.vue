@@ -1,14 +1,44 @@
 <template>
 <div>
   <section class="hero">
-
+    <div class="hero__container">
+      <div class="text">
+    <h2>Shop unique home essentials,<br/>
+all in one place</h2>
+      </div>
+      <div class="browse">
+        <div class="categories">
+          <h4>
+            Browse Categories:
+          </h4>
+          <ul>
+            <li>Furniture</li>
+            <li>Outdoor</li>
+            <li>Decor</li>
+            <li>Storage</li>
+            <li>Kitchen</li>
+            <li>Appliances</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="flash">
     <div class="flash__left">
-      Deals
+      <div class="title">
+        Deals
+      </div>
+      <div class="image">
+          <img src="~/assets/images/home/flash-1.png" class="flash_image">
+      </div>
     </div>
     <div class="flash__right">
-      Sales
+     <div class="title">
+        Sales
+      </div>
+      <div class="image">
+          <img src="~/assets/images/home/sale.png" class="flash_image">
+      </div>
     </div>
 
   </section>
@@ -18,7 +48,7 @@
       </div>
       <div class="featured__box">
         <div class="box">
-          <img src="~/assets/images/hero.png" class="image">
+          <img src="~/assets/images/home/default_name(2).png" class="image">
           <div class="box__title">
             Simpsons Max Sofa House
 Chair
@@ -31,7 +61,7 @@ Chair
           </div>
         </div>
         <div class="box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(3).png" class="image">
           <div class="box__title">
             Simpsons Max Sofa House
 Chair
@@ -44,7 +74,7 @@ Chair
           </div>
         </div>
         <div class="box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-2.png" class="image">
           <div class="box__title">
             Simpsons Max Sofa House
 Chair
@@ -57,7 +87,7 @@ Chair
           </div>
         </div>
         <div class="box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-3.png" class="image">
           <div class="box__title">
             Simpsons Max Sofa House
 Chair
@@ -80,16 +110,16 @@ Chair
        <div class="box__title">
          FURNITURE
        </div>
-       <img src="~/assets/images/hero.png" class="image">
+       <img src="~/assets/images/home/armchair.png" class="image">
        <div class="image__container">
           <div class="image__box">
-            <img src="~/assets/images/hero.png" class="image">
+            <img src="~/assets/images/home/default_name(-4.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-5.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-6.png" class="image">
           </div>
        </div>
       </div>
@@ -97,16 +127,16 @@ Chair
        <div class="box__title">
          OUTDOOR
        </div>
-       <img src="~/assets/images/hero.png" class="image">
+       <img src="~/assets/images/home/armchair.png" class="image">
        <div class="image__container">
           <div class="image__box">
-            <img src="~/assets/images/hero.png" class="image">
+            <img src="~/assets/images/home/default_name(-4.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-5.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-6.png" class="image">
           </div>
        </div>
       </div>
@@ -114,16 +144,16 @@ Chair
        <div class="box__title">
          DECOR
        </div>
-       <img src="~/assets/images/hero.png" class="image">
+       <img src="~/assets/images/home/armchair.png" class="image">
        <div class="image__container">
           <div class="image__box">
-            <img src="~/assets/images/hero.png" class="image">
+            <img src="~/assets/images/home/default_name(-4.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-5.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-6.png" class="image">
           </div>
        </div>
       </div>
@@ -131,16 +161,16 @@ Chair
        <div class="box__title">
          STORAGE
        </div>
-       <img src="~/assets/images/hero.png" class="image">
+       <img src="~/assets/images/home/armchair.png" class="image">
        <div class="image__container">
           <div class="image__box">
-            <img src="~/assets/images/hero.png" class="image">
+            <img src="~/assets/images/home/default_name(-4.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-5.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-6.png" class="image">
           </div>
        </div>
       </div>
@@ -148,16 +178,16 @@ Chair
        <div class="box__title">
          KITCHEN
        </div>
-       <img src="~/assets/images/hero.png" class="image">
+      <img src="~/assets/images/home/armchair.png" class="image">
        <div class="image__container">
           <div class="image__box">
-            <img src="~/assets/images/hero.png" class="image">
+            <img src="~/assets/images/home/default_name(-4.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-5.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-6.png" class="image">
           </div>
        </div>
       </div>
@@ -165,16 +195,16 @@ Chair
        <div class="box__title">
          APPLIANCES
        </div>
-       <img src="~/assets/images/hero.png" class="image">
+       <img src="~/assets/images/home/armchair.png" class="image">
        <div class="image__container">
           <div class="image__box">
-            <img src="~/assets/images/hero.png" class="image">
+            <img src="~/assets/images/home/default_name(-4.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-5.png" class="image">
           </div>
           <div class="image__box">
-           <img src="~/assets/images/hero.png" class="image">
+           <img src="~/assets/images/home/default_name(-6.png" class="image">
           </div>
        </div>
       </div>
@@ -185,7 +215,7 @@ Chair
       dd
     </div>
      <div class="image">
-       <img src="~/assets/images/hero.png" class="slide__image">
+       <img src="~/assets/images/home/room-1.png" class="slide__image">
     </div>
   </section>
   <section class="newsletter">
