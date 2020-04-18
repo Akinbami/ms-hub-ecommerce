@@ -12,7 +12,9 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" },
+      { rel: 'stylesheet', href: "https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" },
     ]
   },
   /*
@@ -33,6 +35,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~plugins/vue-star-rating', ssr: false },
   ],
   /*
   ** Nuxt.js dev-modules

@@ -10,11 +10,80 @@ body{
     width: 60%;
 }
 
-section{
-    // padding: 50px 0px;
-    // margin-bottom: 50px;
-    // border: solid 1px grey;
+header{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    width: 60%;
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
 
+    .left{
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .logo{
+            width: 50%;
+            @include fontDefault(DMB,16px);
+        }
+
+        .drop__menu{
+            width: 50%;
+            @include fontDefault(DMB,16px);
+        }
+    }
+
+    .center{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        input{
+            width: 50%;
+            height: 30px;
+            margin-top: -3px;
+            border: 0px;
+            padding:0px 5px;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        .fa {
+            height: 30px;
+            margin-top: -2px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #A5A5A5;
+            cursor: pointer;
+        }
+    }
+
+    .right{
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .account{
+            width: 50%;
+            @include fontDefault(DMB,16px);
+        }
+
+        .cart{
+            width: 50%;
+            @include fontDefault(DMB,16px);
+        }
+    }
 }
 
 .hero{
@@ -183,6 +252,8 @@ section{
             border: solid 1px #EEEEEE;
             height: 300px;
             padding: 10px;
+            display: flex;
+            flex-direction: column;
 
             .image{
                 width: 100%;
@@ -191,10 +262,17 @@ section{
 
             .box__title{
                 @include fontDefault(DMS,14px);
+                height: 15%;
             }
 
             .box__amount{
                 @include fontDefault(DMS,20px);
+                height: 7%;
+            }
+
+            .box__rating{
+                @include fontDefault(DMS,20px);
+                height: 7%;
             }
         }
     }
@@ -261,10 +339,32 @@ section{
     display: flex;
     flex-direction: row;
    flex-wrap: wrap;
-    height: 350px;
+    // height: 350px;
     .content{
         flex-basis: 50%;
         background-color: #F2EEF5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h3{
+            @include fontDefault(DMB,26px);
+        }
+
+        p{
+            @include fontDefault(DMR,14px);
+        }
+
+        button{
+            width: 200px;
+            height: 40px;
+            color: white;
+            background-color: #2E2E2E;
+            margin-top: 40px;
+            cursor: pointer;
+        }
     }
     .image{
         flex-basis: 50%;

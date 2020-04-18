@@ -1,9 +1,20 @@
 <template>
   <div>
-    <nuxt />
+    <guest_header/>
+      <nuxt />
+    <guest_footer/>
   </div>
 </template>
-
+<script>
+import guest_header from '~/components/guest/header'
+import guest_footer from '~/components/guest/footer'
+export default {
+  components: {
+    guest_header,
+    guest_footer
+  }
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

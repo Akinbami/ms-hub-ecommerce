@@ -13,6 +13,7 @@ $color_grey: #707070;
 @mixin fontDefault ($font,$size){
     @if ($font == DMB) {
         font-family: 'Hind-Regular';
+        font-weight: 600;
     }
     @else if ($font == DMS) {
         font-family: 'Hind-Regular';

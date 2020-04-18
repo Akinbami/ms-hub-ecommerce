@@ -57,7 +57,7 @@ Chair
             ₦80,000
           </div>
           <div class="box__rating">
-            *****
+            <star-rating :star-size="15" :show-rating="false" rating="4"></star-rating>
           </div>
         </div>
         <div class="box">
@@ -69,8 +69,8 @@ Chair
           <div class="box__amount">
             ₦80,000
           </div>
-          <div class="box__rating">
-            *****
+           <div class="box__rating">
+            <star-rating :star-size="15" :show-rating="false" rating="4"></star-rating>
           </div>
         </div>
         <div class="box">
@@ -83,7 +83,7 @@ Chair
             ₦80,000
           </div>
           <div class="box__rating">
-            *****
+            <star-rating :star-size="15" :show-rating="false" rating="4"></star-rating>
           </div>
         </div>
         <div class="box">
@@ -95,8 +95,8 @@ Chair
           <div class="box__amount">
             ₦80,000
           </div>
-          <div class="box__rating">
-            *****
+           <div class="box__rating">
+            <star-rating :star-size="15" :show-rating="false" rating="4"></star-rating>
           </div>
         </div>
       </div>
@@ -212,10 +212,13 @@ Chair
   </section>
   <section class="slide">
     <div class="content">
-      dd
+      <h3>The best room furniture</h3>
+      <p>Browse and shop furniture<br/>
+for your home</p>
+<button>Step Inside</button>
     </div>
      <div class="image">
-       <img src="~/assets/images/home/room-1.png" class="slide__image">
+       <img src="~/assets/images/home/room.png" class="slide__image">
     </div>
   </section>
   <section class="newsletter">
@@ -232,7 +235,7 @@ Chair
 <script>
 export default {
   components: {
-
+    // StarRating
   }
 }
 </script>
