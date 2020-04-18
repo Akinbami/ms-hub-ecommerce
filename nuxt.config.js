@@ -69,6 +69,11 @@ export default {
         path: '/category',
         component: 'pages/category.vue'
       },
+      {
+        name: 'products',
+        path: '/products',
+        component: 'pages/products.vue'
+      },
     ]
   }
 }

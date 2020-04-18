@@ -1,6 +1,7 @@
 <template>
 <div>
     <mini_header/>
+
     <div class="cover">
       <div class="cover__container">
       <h2>Shop your Lifestyle</h2>
