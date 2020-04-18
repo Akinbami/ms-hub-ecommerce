@@ -1,6 +1,7 @@
 <template>
 <div>
     <mini_header/>
+    <breadcrumb/>
     <div class="sort">
       <div class="select">
       <select>
@@ -266,9 +267,11 @@ Chair
 
 <script>
 import mini_header from '~/components/guest/mini-header'
+import breadcrumb from '~/components/guest/breadcrumb'
 export default {
   components: {
-   mini_header
+   mini_header,
+   breadcrumb
   }
 }
 </script>

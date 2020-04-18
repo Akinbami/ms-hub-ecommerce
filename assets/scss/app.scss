@@ -498,6 +498,36 @@ footer{
     }
 }
 
+.breadcrumb{
+    @include container();
+    ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 10px;
+
+        li{
+            cursor: pointer;
+            &:after {
+                padding: 8px;
+                color: black;
+                content: "\003E";
+                cursor:default
+            }
+
+            &:last-child{
+                // cursor: pointer;
+                cursor:default
+            }
+
+            &:last-child::after{
+                content: none;
+            }
+        }
+    }
+
+
+}
+
 .cover{
     min-height: 60vh;
     background-image: url("../images/home/armchair-6@2x.png");
