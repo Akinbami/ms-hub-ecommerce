@@ -56,5 +56,19 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  router: {
+    routes: [
+      {
+        name: 'index',
+        path: '/',
+        component: 'pages/index.vue'
+      },
+      {
+        name: 'category',
+        path: '/category',
+        component: 'pages/category.vue'
+      },
+    ]
   }
 }

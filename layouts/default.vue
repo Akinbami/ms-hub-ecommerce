@@ -1,6 +1,6 @@
 <template>
   <div>
-    <guest_header/>
+    <!-- <guest_header/> -->
       <nuxt />
     <guest_footer/>
   </div>
