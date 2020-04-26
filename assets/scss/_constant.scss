@@ -7,22 +7,19 @@ $DM-font-20: 20px;
 $DM-font-20: 18px;
 $color_white: #fff;
 $color_black: #000;
-$primary_color: #4FC4CF;
+$primary_color: #4fc4cf;
 $color_grey: #707070;
 
-@mixin fontDefault ($font,$size){
-    @if ($font == DMB) {
-        font-family: 'Hind-Regular';
-        font-weight: 600;
-    }
-    @else if ($font == DMS) {
-        font-family: 'Hind-Regular';
-    }
-    @else if ($font == DMR) {
-        font-family: 'Hind-Bold';
-    }
-    @else if ($font == DMM) {
-        font-family: 'Hind-SemiBold';
-    }
-    font-size: $size;
+@mixin fontDefault($font, $size) {
+  @if ($font == DMB) {
+    font-family: "DMSans-Bold";
+    font-weight: 600;
+  } @else if ($font == DMS) {
+    font-family: "Hind-Regular";
+  } @else if ($font == DMR) {
+    font-family: "DMSans-Regular";
+  } @else if ($font == DMM) {
+    font-family: "DMSans-Medium";
+  }
+  font-size: $size;
 }

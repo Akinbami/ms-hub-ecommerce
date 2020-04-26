@@ -1,39 +1,33 @@
 <template>
   <div class="mini-header">
-      <ul>
-          <li>Furniture</li>
-          <li>Outdoor</li>
-          <li>Décor</li>
-          <li>Storage </li>
-          <li> Kitchen</li>
-          <li>Appliances</li>
-      </ul>
+    <ul>
+      <li><a href="/products">Furniture</a></li>
+      <li><a href="/products">Outdoor</a></li>
+      <li><a href="/products">Décor</a></li>
+      <li><a href="/products">Storage</a></li>
+      <li><a href="/products">Kitchen</a></li>
+      <li><a href="/products">Appliances</a></li>
+    </ul>
   </div>
 </template>
 <script>
-
 export default {
-  components: {
-
+  components: {},
+  data() {
+    return {};
   },
-  data () {
+  head() {
     return {
-
-    }
+      link: []
+    };
   },
-  head () {
-    return {
-      link: [
-
-      ]
-    }
-  },
-  methods:{
-
-  }
-}
+  methods: {}
+};
 </script>
 <style>
+a {
+  text-decoration: none;
 
+  color: #333333;
+}
 </style>
-

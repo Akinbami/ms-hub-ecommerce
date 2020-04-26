@@ -1,24 +1,24 @@
 <template>
   <div>
-    <!-- <guest_header/> -->
-      <nuxt />
-    <guest_footer/>
+    <guest_header />
+    <nuxt />
+    <guest_footer />
   </div>
 </template>
 <script>
-import guest_header from '~/components/guest/header'
-import guest_footer from '~/components/guest/footer'
+import guest_header from "~/components/guest/header";
+import guest_footer from "~/components/guest/footer";
 export default {
   components: {
     guest_header,
     guest_footer
   }
-}
+};
 </script>
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
