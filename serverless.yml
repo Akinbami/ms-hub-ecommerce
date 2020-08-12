@@ -1,0 +1,53 @@
+service:
+  name: mshub-project
+
+plugins:
+  - serverless-nuxt-plugin
+  # Recommended Plugins
+  # - serverless-domain-manager
+  # - serverless-apigw-binary
+
+resources:
+  Resources:
+    AssetsBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.nuxt.bucketName}
+        CorsConfiguration:
+          CorsRules:
+            - AllowedMethods:
+              - GET
+              - HEAD
+              AllowedOrigins:
+              - "*"
+
+provider:
+  name: aws
+  region: us-east-2 # this field is used for the assets files s3 path.
+  stage: ${opt:stage, 'dev'}
+  runtime: nodejs12.x
+  profile: mshub
+  environment:
+    NODE_ENV: ${file(.env.${self:provider.stage}.yml):NODE_ENV}
+
+custom:
+  # If the `serverless-domain-manager` plugin is installed ..
+  # customDomain:
+  #   domainName: ${file(.env.${self:provider.stage}.yml):DOMAIN_NAME}
+  # If the `serverless-apigw-binary` plugin is installed ..
+  # apigwBinary:
+  #   types:
+  #     - 'image/*'
+  nuxt:
+    # If the version is defined in the `package.json` file
+    # version: v${file(./package.json):version}
+    version: v0.0.1-alpha
+    bucketName: mshub-project-${self:provider.stage}
+
+functions:
+  nuxt:
+    handler: handler.render
+    events:
+      - schedule: rate(5 minutes) # warm up
+      - http: ANY /
+      - http: ANY /{proxy+}
